@@ -2,7 +2,6 @@
 # by taking evey 5 integers [c4,c3,c2,c1,c0] and apply this formula summation(ci*(37^i))
 def char_conversion_encoding(message):
 
-    
     k=4
     sum=0
     for i in range(0,len(message)):

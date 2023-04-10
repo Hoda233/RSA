@@ -41,7 +41,6 @@ def send():
     for i in range(0,len(message),5):
         sub_message=message[i:i+5]
         
-
         sub_message=charConversion.char_conversion_encoding(sub_message)
     
         
