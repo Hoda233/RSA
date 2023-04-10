@@ -17,8 +17,3 @@ def char_conversion_decoding(number):
         temp_array.insert(0,int(number%37))
         number/=37
     return temp_array
-
-
-
-# print(char_conversion_encoding([17,18,36,28,7]))
-# print(char_conversion_decoding(char_conversion_encoding([17,18,36,28,7])))

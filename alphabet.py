@@ -4,7 +4,6 @@
 # function to convert chars to its mapping
 def alphabet_encoding(message):
 
-     
     x=len(message)%5          #if (length mod 5)=0, the message are complete 
     if(x):
         for i in range(0,5-x):

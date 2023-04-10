@@ -3,13 +3,15 @@ import rsa
 # function to factoerize n to get p,q then calculate d
 def get_private_key(n,e):
     
+    # check on primes from 2 to sqrt(n)
     p=2
-    while(p<=int((n**0.5)+1)):
+    while(p<=int((n**0.5))):
         if n % p == 0:
             q = n//p
             break
         p+=1
-
+        
+    # calculate private key using obtaind p,q
     phi=(p-1)*(q-1)
     d = rsa.mod_inverse(e,phi)
     return (d)
