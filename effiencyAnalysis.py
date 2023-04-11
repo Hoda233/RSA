@@ -10,7 +10,6 @@ lines = effiency_file.read().splitlines()
 enc_time=[]
 dec_time=[]
 key_sizes=[]
-key_values=[]
 
 i =0
 while i < len(lines)-1: 
@@ -20,7 +19,6 @@ while i < len(lines)-1:
 
     public, private = rsa.generate_keypair(int(key_size))
     e,n=public
-    key_values.append(n)
 
     message=lines[i+1]
     i+=2
@@ -52,7 +50,7 @@ while i < len(lines)-1:
 # write results in a file
 with open('effiency_results.txt', 'w') as f:
     for j in range(0,len(key_sizes)):
-            f.write(str(key_sizes[j]) + ' '+str(key_values[j])+' ' +str(enc_time[j])+' ' +str(dec_time[j]))
+            f.write(str(key_sizes[j]) + ' ' +str(enc_time[j])+' ' +str(dec_time[j]))
             f.write('\n')
 f.close()
 
