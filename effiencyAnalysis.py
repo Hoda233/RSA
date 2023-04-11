@@ -59,7 +59,7 @@ f.close()
 # plot the results
 fig, ax = plt.subplots()
 ax.plot(key_sizes, enc_time)
-ax.set_xlabel('Key size in bits')
+ax.set_xlabel('Key size n (bits)')
 ax.set_ylabel('Encryption time (seconds)')
 ax.set_title('Effiency')
 plt.show()

@@ -16,23 +16,18 @@ print("connected with",addr)
 
 public, private = rsa.generate_keypair(1024)
 
+msg=str(public)
+c.send(msg.encode())
+time.sleep(0.01)
 
-j=0
-while j < 2:
-    msg=str(public[j])
-    c.send(msg.encode())
-    j+=1
+msg=c.recv(1024).decode()
+msg=str(msg)
+msg=msg[1:-1] 
+msg = msg.split(',') 
+e=int(msg[0])
+n=int(msg[1])
+other_public=e,n
 
-j=0
-while j < 2:
-    msg=c.recv(1024)
-    if j == 0:
-        e =int (msg)
-    if j == 1:
-        n = int(msg)   
-    j+=1
-
-other_public=(e,n)    
 
 def send():
     print('Enter Message:')
@@ -48,12 +43,12 @@ def send():
         
         ciphertext=rsa.encrypt(sub_message,other_public)
         c.send(str(ciphertext).encode())
-        time.sleep(0.1)
+        time.sleep(0.01)
     
     
     end_msg='@'
     c.send(end_msg.encode())
-    time.sleep(1)
+    time.sleep(0.01)
 
 
 
@@ -76,6 +71,11 @@ def recieve():
     print('Message Received: ')
     print(plaintext)
 
-while True:
-    recieve()
-    send()
+try:
+    while True:
+        recieve()
+        send()
+
+except KeyboardInterrupt:
+    print('Close connection')
+    c.close()

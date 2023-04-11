@@ -57,7 +57,7 @@ f.close()
 # plot the results
 fig, ax = plt.subplots()
 ax.plot(key_sizes, attack_time)
-ax.set_xlabel('Key size in bits')
+ax.set_xlabel('Key size n (bits)')
 ax.set_ylabel('Break time (seconds)')
 ax.set_title('Attacking')
 plt.show()
