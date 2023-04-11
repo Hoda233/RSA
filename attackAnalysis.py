@@ -38,14 +38,14 @@ while i < len(lines)-1:
     n_keys.append(n)
     d_keys.append(d)
     attack_time.append(end-start)
-    print('time to get key ',end-start)
+    print('time to get key ',end-start ,'key size: ',key_size)
 
     # check if attacking is successful
     is_attacked=attack.attack_check(ciphertext,message,n,d)
     if(is_attacked):
-        print("Server is Attacked","Private Key(d): ",d,' (n): ', n)
+        print("Attacked","Private Key(d): ",d,' (n): ', n)
     else:
-        print("Server Attack Failed")
+        print("Attack Failed")
 
 # write results in a file
 with open('attack_results.txt', 'w') as f:

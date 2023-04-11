@@ -27,4 +27,5 @@ try:
 
 except KeyboardInterrupt:
     print('Close connection')
+    s.close()
     c.close()
