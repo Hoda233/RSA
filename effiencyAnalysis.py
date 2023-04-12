@@ -62,3 +62,11 @@ ax.set_xlabel('Key size n (bits)')
 ax.set_ylabel('Encryption time (seconds)')
 ax.set_title('Effiency')
 plt.show()
+
+# plot the results
+fig, ax = plt.subplots()
+ax.plot(key_sizes, dec_time)
+ax.set_xlabel('Key size n (bits)')
+ax.set_ylabel('Decryption time (seconds)')
+ax.set_title('Effiency')
+plt.show()
