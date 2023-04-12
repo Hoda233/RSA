@@ -49,6 +49,7 @@ while i < len(lines)-1:
 
 # write results in a file
 with open('effiency_results.txt', 'w') as f:
+    f.write('key size in bits | enc time | dec time \n')
     for j in range(0,len(key_sizes)):
             f.write(str(key_sizes[j]) + ' ' +str(enc_time[j])+' ' +str(dec_time[j]))
             f.write('\n')

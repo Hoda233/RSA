@@ -43,12 +43,13 @@ while i < len(lines)-1:
     # check if attacking is successful
     is_attacked=attack.attack_check(ciphertext,message,n,d)
     if(is_attacked):
-        print("Attacked","Private Key(d): ",d,' (n): ', n)
+        print("--Attacked--","Private Key(d): ",d,' (n): ', n)
     else:
         print("Attack Failed")
 
 # write results in a file
 with open('attack_results.txt', 'w') as f:
+    f.write('key size in bits | n | d | attack time \n')
     for j in range(0,len(key_sizes)):
         f.write(str(key_sizes[j]) + ' '+str(n_keys[j])+' '+str(d_keys[j])+' '+str(attack_time[j]))
         f.write('\n')
