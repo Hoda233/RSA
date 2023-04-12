@@ -1,8 +1,5 @@
 import socket 
 import rsa
-import alphabet
-import charConversion
-import time
 import chatFunctions
 
 s = socket.socket() 
