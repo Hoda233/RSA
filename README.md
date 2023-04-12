@@ -24,9 +24,3 @@ pip install matplotlib
 - **effiencyAnalysis:** ( effiencyAnalysis.py, effiency_test.txt, effiency_results.txt)
 - **Attack:** (attackAnalysis.py, attack.py, attack_test.txt, attack_results.txt)
 
-## In attack_results file:
-Size of n (bits) | Value of n | Value of d | Time of breaking/factorizing n (seconds)
-
-## In effiency_results file:
-Size of n (bits) | Time of encryption (seconds) | Time of decryption (seconds)
-
