@@ -46,8 +46,14 @@ def recieve(socket,private):
         ciphertext=socket.recv(1024)
 
         if b'@' in ciphertext:
-            print('end')
+            # print('end')
             break 
+
+        if(ciphertext == b''):
+            print('\n Close connection')
+            socket.close()
+            return True
+
         ciphertext=int(ciphertext)
         decrypted=rsa.decrypt(ciphertext,private)
         decrypted=charConversion.char_conversion_decoding(decrypted)
@@ -57,4 +63,5 @@ def recieve(socket,private):
 
     print('Message Received: ')
     print(plaintext)
+    return False
 

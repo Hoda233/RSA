@@ -19,7 +19,10 @@ other_public=chatFunctions.receive_publickey(c)
 
 try:
     while True:
-        chatFunctions.recieve(c,private)
+        is_closed=chatFunctions.recieve(c,private)
+        # print(is_closed)
+        if(is_closed):
+            break
         chatFunctions.send(c,other_public)
 
 except KeyboardInterrupt:
