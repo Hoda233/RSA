@@ -30,12 +30,15 @@ def alphabet_decoding(message):
     new_message=''
 
     for i in range(0,len(message)):
+        # get ascii code from mapping
         if(message[i]>=10 and message[i]<=35):
             x=97+(message[i]-10)
         elif(message[i]>=0 and message[i]<=9):
             x=48+(message[i])
         else:
             x=32
+
+        # get char from its ascii code
         new_message+=chr(x)
 
     return(new_message)
