@@ -34,7 +34,6 @@ def send(socket,other_public):
         socket.send(str(ciphertext).encode())
         time.sleep(0.01)
     
-    
     end_msg='@'
     socket.send(end_msg.encode())
     time.sleep(0.01)
@@ -51,7 +50,6 @@ def recieve(socket,private):
 
         if(ciphertext == b''):
             print('\n Close connection')
-            socket.close()
             return True
 
         ciphertext=int(ciphertext)
