@@ -1,10 +1,6 @@
 # RSA Cryptography 
 ## To use, run first if not installed before:
-pip install sockets
-
-pip install sympy
-
-pip install matplotlib
+`pip install sockets` `pip install sympy` `pip install matplotlib`
 
 ## To start chatting
 - Open 2 terminals
