@@ -4,8 +4,10 @@
 RSA (Rivest–Shamir–Adleman) is a public-key cryptosystem that is widely used for secure data
 transmission.
 
-This assignment is to implement RSA encryption/decryption and analyze its effiency and security.
+This assignment is to implement chat app to exchange secure messages encrypted/decrypted using RSA and analyze its effiency and security.
 
+## Built with:
+Python
 ## How to run:
 ### To use, run first if not installed before:
 `pip install sockets` `pip install sympy` `pip install matplotlib`
@@ -28,6 +30,8 @@ This assignment is to implement RSA encryption/decryption and analyze its effien
 - **effiencyAnalysis:** ( `effiencyAnalysis.py`, `effiency_test.txt`, `effiency_results.txt`)
 - **Attack:** (`attackAnalysis.py`, `attack.py`, `attack_test.txt`, `attack_results.txt`)
 
+## Chatting 
+![Alt Text](chatting.png)
 ## Effiency Analysis:
 ![Alt Text](eff_test1/Figure_1.png)
 ![Alt Text](eff_test1/Figure_2.png)
