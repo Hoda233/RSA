@@ -1,4 +1,4 @@
-# 💻🔍👩‍💻👀🛑RSA Cryptography 
+# 👩‍💻🔍💻🛑RSA Cryptography 
 
 ## About:
 RSA (Rivest–Shamir–Adleman) is a public-key cryptosystem that is widely used for secure data
