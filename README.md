@@ -1,12 +1,12 @@
 # RSA Cryptography 
 
-## About
+## About:
 RSA (Rivest–Shamir–Adleman) is a public-key cryptosystem that is widely used for secure data
 transmission.
 
 This assignment is to implement RSA encryption/decryption and analyze its effiency and security.
 
-## How to run
+## How to run:
 ### To use, run first if not installed before:
 `pip install sockets` `pip install sympy` `pip install matplotlib`
 
@@ -27,4 +27,13 @@ This assignment is to implement RSA encryption/decryption and analyze its effien
 - **Algorithm & Conversions:** ( `alphabet.py`, `charConversion.py`, `rsa.py`)
 - **effiencyAnalysis:** ( `effiencyAnalysis.py`, `effiency_test.txt`, `effiency_results.txt`)
 - **Attack:** (`attackAnalysis.py`, `attack.py`, `attack_test.txt`, `attack_results.txt`)
+
+## Effiency Analysis:
+![Alt Text](eff_test1/Figure_1.png)
+![Alt Text](eff_test1/Figure_2.png)
+
+## Attack Analysis:
+![Alt Text](attack_test/attack_figure.png)
+### For more explanation, check the report and video.
+
 
