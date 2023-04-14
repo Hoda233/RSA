@@ -31,13 +31,13 @@ Python
 - **Attack:** (`attackAnalysis.py`, `attack.py`, `attack_test.txt`, `attack_results.txt`)
 
 ## Chatting 
-![Alt Text](chatting.png)
+![Alt Text](tests/chat_test/chatting.png)
 ## Effiency Analysis:
-![Alt Text](eff_test1/Figure_1.png)
-![Alt Text](eff_test1/Figure_2.png)
+![Alt Text](tests/eff_test1/Figure_1.png)
+![Alt Text](tests/eff_test1/Figure_2.png)
 
 ## Attack Analysis:
-![Alt Text](attack_test/attack_figure.png)
-### For more, check the report, video and test results folders.
+![Alt Text](tests/attack_test/attack_figure.png)
+### For more, check tests folder and OtherFiles folder for report and video.
 
 
