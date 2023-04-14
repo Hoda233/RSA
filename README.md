@@ -34,6 +34,6 @@ This assignment is to implement RSA encryption/decryption and analyze its effien
 
 ## Attack Analysis:
 ![Alt Text](attack_test/attack_figure.png)
-### For more explanation, check the report and video.
+### For more, check the report, video and test results folders.
 
 
