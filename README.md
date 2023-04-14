@@ -38,6 +38,6 @@ Python
 
 ## Attack Analysis:
 ![Alt Text](tests/attack_test/attack_figure.png)
-### For more, check tests folder and OtherFiles folder for report and video.
+### For more, check tests and OtherFiles folders.
 
 
