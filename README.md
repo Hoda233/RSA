@@ -15,8 +15,8 @@
 `python attackAnalysis.py`
 
 ## Files:
-- **chatting:**  ( chatFunctions.py, client.py, server.py )
-- **Algorithm & Conversions:** ( alphabet.py, charConversion.py, rsa.py)
-- **effiencyAnalysis:** ( effiencyAnalysis.py, effiency_test.txt, effiency_results.txt)
-- **Attack:** (attackAnalysis.py, attack.py, attack_test.txt, attack_results.txt)
+- **chatting:**  ( `chatFunctions.py`, `client.py`, `server.py` )
+- **Algorithm & Conversions:** ( `alphabet.py`, `charConversion.py`, `rsa.py`)
+- **effiencyAnalysis:** ( `effiencyAnalysis.py`, `effiency_test.txt`, `effiency_results.txt`)
+- **Attack:** (`attackAnalysis.py`, `attack.py`, `attack_test.txt`, `attack_results.txt`)
 
